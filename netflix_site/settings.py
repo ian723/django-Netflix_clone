@@ -76,11 +76,15 @@ WSGI_APPLICATION = 'netflix_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'C:\\Users\\Hp\\Personal-work2\\Netflix-clone\\mydb\\mydb.sqlite3',
-
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'netflix-clone',    
+        'USER': 'postgres', 
+        'PASSWORD': 'Mawamu123',  
+        'HOST': '127.0.0.1',       
+        'PORT': '5432',       
     }
 }
+
 
 
 # Password validation
